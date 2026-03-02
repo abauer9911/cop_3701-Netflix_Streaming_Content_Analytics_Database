@@ -146,3 +146,52 @@ Access summarized ranking and popularity data generated from stored procedures a
 - The schema supports country-based partitioning and materialized views for genre popularity analysis in later project phases.
 
 This ER model provides a structured foundation for implementing the relational schema and analytical components required in the next stages of the project.
+
+---
+
+## Normalized Relational Schema (BCNF)
+After evaluating each relation against the requirements of Boyce–Codd Normal Form (BCNF), all relations in the Netflix Streaming Content Analytics database were determined to satisfy BCNF. No decompositions were required.
+The final normalized relational schema is presented below.
+
+### Content
+Content(content_id PK, title, type, release_year, date_added, rating, duration_minutes, seasons, description)
+-	Primary Key: content_id
+
+### Genre
+Genre(genre_id PK, genre_name)
+-	Primary Key: genre_id
+-	genre_name may be enforced as UNIQUE
+
+### Country
+Country(country_id PK, country_name, region)
+-	Primary Key: country_id
+-	country_name may be enforced as UNIQUE
+
+### ContentGenre
+ContentGenre(content_id PK/FK → Content, genre_id PK/FK → Genre, is_primary_genre)
+-	Composite Primary Key: (content_id, genre_id)
+-	Resolves the many-to-many relationship between Content and Genre
+
+### ContentCountry
+ContentCountry(content_id PK/FK → Content, country_id PK/FK → Country)
+-	Composite Primary Key: (content_id, country_id)
+-	Resolves the many-to-many relationship between Content and Country
+
+### ContentMetrics
+ContentMetrics(content_id PK/FK → Content, popularity_score, rank_score, last_ranked_on)
+-	Primary Key: content_id
+-	Models a one-to-one extension of Content
+
+### Episode
+Episode(content_id PK/FK → Content, season_number PK, episode_number PK, episode_title, runtime_minutes)
+-	Composite Primary Key: (content_id, season_number, episode_number)
+-	Weak entity dependent on Content
+
+### Final Remarks
+The schema is fully normalized to BCNF and preserves all functional dependencies identified in Section 4. Each relation:
+-	Contains a clearly defined primary key.
+-	Uses foreign keys to enforce referential integrity.
+-	Avoids partial and transitive dependencies.
+-	Minimizes redundancy and update anomalies.
+The resulting structure provides a stable and scalable foundation for implementing analytical queries, materialized views, ranking procedures, and partitioning strategies in later phases of the project.
+
