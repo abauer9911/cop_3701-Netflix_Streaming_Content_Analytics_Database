@@ -44,6 +44,12 @@ This design ensures full compliance with relational modeling requirements and su
 
 ---
 
+## ER Diagram
+
+<img width="602" height="497" alt="image" src="https://github.com/user-attachments/assets/c92b3d70-2d7b-4cf1-b3fe-7c8e425acc10" />
+
+---
+
 ## High-Level Goals
 The primary goals of this project include:
 
@@ -130,3 +136,77 @@ The focus is on backend database architecture and analytics functionality rather
 - SQL for schema design, queries, views, and stored procedures
 - GitHub for version control and documentation
 - dbdiagram.io for ER modeling
+
+
+
+
+---
+
+# Database Setup Instructions
+
+## Step 1 — Create Database Schema
+
+Run:
+`creat_db.sql`
+
+This script creates all database tables including:
+
+- Content  
+- Genre  
+- Country  
+- ContentGenre  
+- ContentCountry  
+- ContentMetrics  
+- Episode  
+
+---
+
+## Step 2 — Generate CSV Files
+
+Run:
+`python PreProcess.py`
+
+This script:
+
+- Cleans the original Netflix dataset  
+- Normalizes multi-valued attributes  
+- Generates CSV files for each table  
+
+Files created:
+
+- content.csv  
+- genre.csv  
+- country.csv  
+- contentgenre.csv  
+- contentcountry.csv  
+- contentmetrics.csv  
+- episode.csv  
+
+---
+
+## Step 3 — Load Data into Database
+
+Run:
+`python dataload.py`
+
+This script loads all CSV files into the Oracle database tables.
+
+---
+
+## Database Connection Configuration
+
+Before running `dataload.py`, update the following values:
+
+DB_USER = "YOUR_USERNAME"
+DB_PASS = "YOUR_PASSWORD"
+DB_DSN = "YOUR_HOST:PORT/SERVICE_NAME"
+
+LIB_DIR = r"PATH_TO_ORACLE_INSTANT_CLIENT"
+
+
+DB_USER – your Oracle username
+DB_PASS – your Oracle password
+DB_DSN – Oracle connection string
+LIB_DIR – local path to Oracle Instant Client
+
+These values are environment-specific and must be configured before running the loader.
