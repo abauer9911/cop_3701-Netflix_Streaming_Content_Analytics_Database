@@ -1,0 +1,123 @@
+country_id,country_name,region
+1,United States,North America
+2,South Africa,Africa
+3,India,Asia
+4,Ghana,Africa
+5,Burkina Faso,Other
+6,United Kingdom,Europe
+7,Germany,Europe
+8,Ethiopia,Other
+9,Czech Republic,Other
+10,Mexico,North America
+11,Turkey,Asia
+12,Australia,Oceania
+13,France,Europe
+14,Finland,Europe
+15,China,Asia
+16,Canada,North America
+17,Japan,Asia
+18,Nigeria,Africa
+19,Spain,Europe
+20,Belgium,Europe
+21,South Korea,Asia
+22,Singapore,Asia
+23,Italy,Europe
+24,Romania,Other
+25,Argentina,South America
+26,Venezuela,Other
+27,Hong Kong,Asia
+28,Russia,Europe
+29,Ireland,Europe
+30,Nepal,Other
+31,New Zealand,Oceania
+32,Brazil,South America
+33,Greece,Other
+34,Jordan,Other
+35,Colombia,South America
+36,Switzerland,Other
+37,Israel,Asia
+38,Taiwan,Asia
+39,Bulgaria,Other
+40,Algeria,Other
+41,Poland,Europe
+42,Saudi Arabia,Asia
+43,Thailand,Asia
+44,Indonesia,Asia
+45,Egypt,Africa
+46,Denmark,Europe
+47,Kuwait,Other
+48,Netherlands,Europe
+49,Malaysia,Asia
+50,Vietnam,Other
+51,Hungary,Other
+52,Sweden,Europe
+53,Lebanon,Other
+54,Syria,Other
+55,Philippines,Asia
+56,Iceland,Other
+57,United Arab Emirates,Asia
+58,Norway,Europe
+59,Qatar,Other
+60,Mauritius,Other
+61,Austria,Other
+62,Cameroon,Other
+63,Palestine,Other
+64,Uruguay,Other
+65,Kenya,Africa
+66,Chile,South America
+67,Luxembourg,Other
+68,Cambodia,Other
+69,Bangladesh,Other
+70,Portugal,Europe
+71,Cayman Islands,Other
+72,Senegal,Other
+73,Serbia,Other
+74,Malta,Other
+75,Namibia,Other
+76,Angola,Other
+77,Peru,South America
+78,Mozambique,Other
+79,Belarus,Other
+80,Zimbabwe,Other
+81,Puerto Rico,Other
+82,Pakistan,Asia
+83,Cyprus,Other
+84,Guatemala,Other
+85,Iraq,Other
+86,Malawi,Other
+87,Paraguay,Other
+88,Croatia,Other
+89,Iran,Other
+90,West Germany,Other
+91,Albania,Other
+92,Georgia,Other
+93,Soviet Union,Other
+94,Morocco,Africa
+95,Slovakia,Other
+96,Ukraine,Other
+97,Bermuda,Other
+98,Ecuador,Other
+99,Armenia,Other
+100,Mongolia,Other
+101,Bahamas,Other
+102,Sri Lanka,Other
+103,Latvia,Other
+104,Liechtenstein,Other
+105,Cuba,Other
+106,Nicaragua,Other
+107,Slovenia,Other
+108,Dominican Republic,Other
+109,Samoa,Other
+110,Azerbaijan,Other
+111,Botswana,Other
+112,Vatican City,Other
+113,Jamaica,Other
+114,Kazakhstan,Other
+115,Lithuania,Other
+116,Afghanistan,Other
+117,Somalia,Other
+118,Sudan,Other
+119,Panama,Other
+120,Uganda,Other
+121,East Germany,Other
+122,Montenegro,Other
