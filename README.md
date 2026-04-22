@@ -163,7 +163,7 @@ This script creates all database tables including:
 
 ## Step 2 — Generate CSV Files
 
-Run:
+Download original dataset from Kaggle (link provided above) and run:
 `python PreProcess.py`
 
 This script:
@@ -181,6 +181,9 @@ Files created:
 - contentcountry.csv  
 - contentmetrics.csv  
 - episode.csv  
+
+
+(Alternatively, the preprocessed csv's are provided in the Data subfolder for ease of use.
 
 ---
 
