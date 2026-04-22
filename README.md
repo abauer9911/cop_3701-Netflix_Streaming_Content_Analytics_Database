@@ -213,3 +213,53 @@ DB_DSN – Oracle connection string
 LIB_DIR – local path to Oracle Instant Client
 
 These values are environment-specific and must be configured before running the loader.
+
+---
+
+## Step 4 — Run Application
+
+Run the designed application with the following command in the terminal:
+`python NetflixDataMenu.py`
+
+This will launch a command-line interface that allows users to interact with the database and execute various analytical features.
+
+### Using the Application
+
+Once the application starts:
+
+1. A menu of available features will be displayed  
+2. Enter the number corresponding to the feature you want to use  
+3. Provide any required input (such as region, genre, or filters)  
+4. The application will execute the corresponding SQL query  
+5. Results will be displayed in a readable format  
+
+---
+
+### Database Configuration (IMPORTANT)
+
+Before running `NetflixDataMenu.py`, update the following values in the file:
+
+DB_USER = "YOUR_USERNAME"
+DB_PASS = "YOUR_PASSWORD"
+DB_DSN = "YOUR_HOST:PORT/SERVICE_NAME"
+
+LIB_DIR = r"PATH_TO_ORACLE_INSTANT_CLIENT"
+
+
+- **DB_USER** – your Oracle username  
+- **DB_PASS** – your Oracle password  
+- **DB_DSN** – your Oracle connection string  
+- **LIB_DIR** – path to your local Oracle Instant Client  
+
+These values are environment-specific and must be configured before running the application, similar to the setup required for `dataload.py`.
+
+---
+
+### Notes
+
+- Ensure that Steps 1–3 have been completed before running the application  
+- Make sure your database connection credentials are correctly configured  
+- Input values must follow the format specified in the prompts  
+- If no results are returned, verify that the dataset has been properly loaded  
+
+---
